@@ -57,17 +57,18 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
 
         if(length!=0 && width!=0 && height!=0){
 
-            typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
+            //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
+            typeNameTxt.setText(productTypeSizeDBData.getWidth());
          // finalSize =  width + "X" + height + "X" + length;
 
         }else if(width==0){
-            typeNameTxt.setText(productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
+           // typeNameTxt.setText(productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
           //  finalSize = height + "X" + length;
         }else if (height ==0){
-            typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getLength());
+            //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getLength());
             //finalSize = length + "X" + width;
         }else if (length ==0){
-            typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight());
+            //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight());
             //finalSize = width + "X" + height;
         }
       //  typeNameTxt.setText(productTypeSizeDBData.getSizeId());
