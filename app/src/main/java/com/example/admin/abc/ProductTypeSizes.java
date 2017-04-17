@@ -16,7 +16,7 @@ public class ProductTypeSizes extends AppCompatActivity {
     ImageView back;
 
     //Context c;
-    final static String url = "http://10.0.2.2/abc/getProductTypeSizes.php?ProductTypeId=";
+    final static String url = "http://192.168.0.6/abc/getProductTypeSizes.php?ProductTypeId=";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
