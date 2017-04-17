@@ -18,6 +18,9 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
     Context c;
     ArrayList<ProductTypeSizeDBData> productTypeSizeDBDatas;
     LayoutInflater inflater;
+
+    String finalSize = null;
+
     public SizeTypeProductListAdapter(Context c, ArrayList<ProductTypeSizeDBData> productTypeSizeDBDatas) {
         this.c = c;
         this.productTypeSizeDBDatas = productTypeSizeDBDatas;
@@ -54,10 +57,18 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
 
         if(length!=0 && width!=0 && height!=0){
 
+          finalSize =  width + "X" + height + "X" + length;
 
         }
-
-        typeNameTxt.setText(productTypeSizeDBData.getSizeId());
+        if(width==0){
+            finalSize = height + "X" + length;
+        }else if (height ==0){
+            finalSize = length + "X" + width;
+        }else if (length ==0){
+            finalSize = width + "X" + height;
+        }
+      //  typeNameTxt.setText(productTypeSizeDBData.getSizeId());
+        typeNameTxt.setText(finalSize);
         //IMG
 
         // open new activity
