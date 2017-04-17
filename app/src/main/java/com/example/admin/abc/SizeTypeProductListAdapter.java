@@ -19,7 +19,7 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
     ArrayList<ProductTypeSizeDBData> productTypeSizeDBDatas;
     LayoutInflater inflater;
 
-    String finalSize = null;
+    String finalSize;
 
     public SizeTypeProductListAdapter(Context c, ArrayList<ProductTypeSizeDBData> productTypeSizeDBDatas) {
         this.c = c;
