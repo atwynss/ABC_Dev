@@ -44,7 +44,7 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
         {
             convertView=inflater.inflate(R.layout.producttypesize_list_view,parent,false);
         }
-        TextView typeNameTxt= (TextView) convertView.findViewById(R.id.textViewURL1);
+        TextView typeNameTxt= (TextView) convertView.findViewById(R.id.productSize);
 
         //BIND DATA
         ProductTypeSizeDBData productTypeSizeDBData = (ProductTypeSizeDBData) this.getItem(position);
