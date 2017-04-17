@@ -1,0 +1,79 @@
+package com.example.admin.abc;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Geetha on 4/14/2017 for displaying main product type images sizes based on size.
+ */
+
+public class SizeTypeProductListAdapter extends BaseAdapter {
+
+    Context c;
+    ArrayList<ProductTypeSizeDBData> productTypeSizeDBDatas;
+    LayoutInflater inflater;
+    public SizeTypeProductListAdapter(Context c, ArrayList<ProductTypeSizeDBData> productTypeSizeDBDatas) {
+        this.c = c;
+        this.productTypeSizeDBDatas = productTypeSizeDBDatas;
+        inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
+    @Override
+    public int getCount() {
+        return productTypeSizeDBDatas.size();
+    }
+    @Override
+    public Object getItem(int position) {
+        return productTypeSizeDBDatas.get(position);
+    }
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        if(convertView==null)
+        {
+            convertView=inflater.inflate(R.layout.producttypesize_list_view,parent,false);
+        }
+        TextView typeNameTxt= (TextView) convertView.findViewById(R.id.textViewURL1);
+
+        //BIND DATA
+        ProductTypeSizeDBData productTypeSizeDBData = (ProductTypeSizeDBData) this.getItem(position);
+
+        final int sizeid = productTypeSizeDBData.getSizeId();
+        final int length = productTypeSizeDBData.getLength();
+        final int width = productTypeSizeDBData.getWidth();
+        final int height = productTypeSizeDBData.getHeight();
+        final String measure = productTypeSizeDBData.getMeasurement();
+
+        if(length!=0 && width!=0 && height!=0){
+
+
+        }
+
+        typeNameTxt.setText(productTypeSizeDBData.getSizeId());
+        //IMG
+
+        // open new activity
+       /* convertView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openProductTypeSizesActivity(ptid);
+            }
+        });*/
+
+        return convertView;
+    }
+
+   /* public void openProductTypeSizesActivity(int ptid){
+        Intent intent = new Intent(c,ProductTypeSizes.class);
+        intent.putExtra("PRODUCTTYPEID_KEY", ptid);
+        c.startActivity(intent);
+    }*/
+}

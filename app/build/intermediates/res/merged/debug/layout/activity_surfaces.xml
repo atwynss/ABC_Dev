@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:fillViewport="false"
+    >
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+
+
+            android:layout_width="1028px"
+            android:layout_height="110px"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/cred"
+            android:weightSum="25"
+            android:id="@+id/linearLayout"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:layout_width="600px"
+                android:layout_height="100px"
+                app:srcCompat="@mipmap/abctextlogo"
+                android:id="@+id/imageView2"
+
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@mipmap/backbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/back19"
+                android:cropToPadding="false"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SURFACES"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:typeface="normal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:lineSpacingExtra="8sp"
+            android:fontFamily="sans-serif" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/im61"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="680px"
+            android:layout_height="350px"
+            app:srcCompat="@mipmap/surffour" />
+
+        <TextView
+            android:layout_height="80px"
+            android:text="Rustic Surfaces"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/colorblack"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:layout_width="680px" />
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_height="350px"
+            android:id="@+id/im32"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/surftwo"
+            android:layout_width="680px" />
+
+        <TextView
+            android:layout_height="80px"
+            android:text="Polished Glaced Vitrified Tiles"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorblack"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:layout_width="680px" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="680px"
+            android:layout_height="350px"
+            android:id="@+id/im33"
+
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/surffive" />
+
+        <TextView
+            android:layout_height="80px"
+            android:text="Metallic Surfaces"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorblack"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:layout_width="680px" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="680px"
+            android:layout_height="350px"
+            android:id="@+id/im34"
+
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/surfone" />
+
+        <TextView
+            android:layout_height="80px"
+            android:text="Glazed Vitrified Tiles"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorblack"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:layout_width="680px" />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="680px"
+            android:layout_height="350px"
+            android:id="@+id/im35"
+
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/surfthree" />
+
+        <TextView
+            android:text="Wooden Floor"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorblack"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:layout_width="680px"
+            android:layout_height="80px" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.abc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.0" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.admin.abc.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.admin.abc.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.admin.abc.Products"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Bathroom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Basins"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.BasinsSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Size400300"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Size400300full"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Brands"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Offers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Enquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Surfaces"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Paints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.Decoratives"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.CeramicTiles"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.CeramicTilesSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.ShowBasinSingleRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.UpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.SingleViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.admin.abc.ProductTypes"
+            android:screenOrientation="portrait" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.example.admin.abc.RusticSize" />
+        <activity android:name="com.example.admin.abc.RusticSizeOne" />
+        <activity android:name="com.example.admin.abc.RusticSizeOneFull" />
+        <activity android:name="com.example.admin.abc.CeramicTilesSizeOne" />
+        <activity android:name="com.example.admin.abc.CeramicTilesSizeOneFull" />
+        <activity android:name="com.example.admin.abc.RusticSizeTiles" />
+        <activity android:name="com.example.admin.abc.PaintsTypes" />
+        <activity android:name="com.example.admin.abc.PaintOne" />
+        <activity android:name="com.example.admin.abc.PaintsOneFull" />
+        <activity android:name="com.example.admin.abc.ArtificialGrass" />
+        <activity android:name="com.example.admin.abc.ArtificialGrassOne" />
+        <activity android:name="com.example.admin.abc.ArtificialGrassOneFull" />
+    </application>
+
+</manifest>

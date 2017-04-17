@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:fillViewport="false"
+    >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_enquiry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.admin.abc.Brands"
+    android:background="@color/white">
+    <LinearLayout
+
+
+        android:layout_width="1028px"
+        android:layout_height="110px"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/cred"
+        android:weightSum="25"
+        android:id="@+id/linearLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="600px"
+            android:layout_height="100px"
+            app:srcCompat="@mipmap/abctextlogo"
+            android:id="@+id/imageView2"
+
+            android:layout_marginTop="5px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@mipmap/backbutton"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/back5"
+
+            android:cropToPadding="false"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Our Brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130px"
+        android:id="@+id/textView4"
+        android:textColor="@color/cred"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        app:srcCompat="@mipmap/brandone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView5"
+        android:layout_marginLeft="20dp"
+
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        app:srcCompat="@mipmap/brandtwo"
+        android:id="@+id/imageView6"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        app:srcCompat="@mipmap/brandthree"
+        android:id="@+id/imageView9"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        android:layout_marginTop="10px"
+        app:srcCompat="@mipmap/brandfour"
+        android:id="@+id/imageView10"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        android:layout_marginTop="10px"
+        app:srcCompat="@mipmap/brandfour"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView9"
+
+        android:id="@+id/imageView11" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        app:srcCompat="@mipmap/brandten"
+        android:layout_below="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView12"
+        android:layout_marginTop="10px"
+        android:id="@+id/imageView15" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        app:srcCompat="@mipmap/brandnine"
+        android:id="@+id/imageView14"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="200px"
+        android:layout_marginTop="10px"
+        app:srcCompat="@mipmap/brandfive"
+        android:id="@+id/imageView12"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView10" />
+
+
+</RelativeLayout>
+
+</ScrollView>
