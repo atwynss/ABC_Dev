@@ -13,7 +13,7 @@ public class Products extends AppCompatActivity {
 
     // @Written By Geetha - Code Starts Here
 
-    final static String urlAddress = "http://192.168.0.3/abc/getProductImages.php";
+    final static String urlAddress = "http://192.168.0.6/abc/getProductImages.php";
   //  final static String urlAddress = "http://10.0.2.2/abc/getProductImages.php";
 
    @Override
