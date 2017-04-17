@@ -57,18 +57,21 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
 
         if(length!=0 && width!=0 && height!=0){
 
-          finalSize =  width + "X" + height + "X" + length;
+            typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
+         // finalSize =  width + "X" + height + "X" + length;
 
-        }
-        if(width==0){
-            finalSize = height + "X" + length;
+        }else if(width==0){
+            typeNameTxt.setText(productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
+          //  finalSize = height + "X" + length;
         }else if (height ==0){
-            finalSize = length + "X" + width;
+            typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getLength());
+            //finalSize = length + "X" + width;
         }else if (length ==0){
-            finalSize = width + "X" + height;
+            typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight());
+            //finalSize = width + "X" + height;
         }
       //  typeNameTxt.setText(productTypeSizeDBData.getSizeId());
-        typeNameTxt.setText(String.valueOf(finalSize));
+       // typeNameTxt.setText(String.valueOf(finalSize));
         //IMG
 
         // open new activity
