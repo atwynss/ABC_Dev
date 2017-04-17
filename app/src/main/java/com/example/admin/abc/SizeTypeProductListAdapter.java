@@ -62,12 +62,15 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
          // finalSize =  width + "X" + height + "X" + length;
 
         }else if(width==0){
+            typeNameTxt.setText(productTypeSizeDBData.getWidth());
            // typeNameTxt.setText(productTypeSizeDBData.getHeight()+ "X" + productTypeSizeDBData.getLength());
           //  finalSize = height + "X" + length;
         }else if (height ==0){
+            typeNameTxt.setText(productTypeSizeDBData.getWidth());
             //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getLength());
             //finalSize = length + "X" + width;
         }else if (length ==0){
+            typeNameTxt.setText(productTypeSizeDBData.getWidth());
             //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight());
             //finalSize = width + "X" + height;
         }
