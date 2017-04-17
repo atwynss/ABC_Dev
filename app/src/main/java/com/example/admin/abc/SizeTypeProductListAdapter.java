@@ -69,7 +69,7 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
             typeNameTxt.setText(productTypeSizeDBData.getWidth());
             //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getLength());
             //finalSize = length + "X" + width;
-        }else if (length ==0){
+        }else {
             typeNameTxt.setText(productTypeSizeDBData.getWidth());
             //typeNameTxt.setText(productTypeSizeDBData.getWidth() + "X"+ productTypeSizeDBData.getHeight());
             //finalSize = width + "X" + height;
