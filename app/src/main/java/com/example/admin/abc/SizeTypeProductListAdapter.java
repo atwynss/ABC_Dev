@@ -68,7 +68,7 @@ public class SizeTypeProductListAdapter extends BaseAdapter {
             finalSize = width + "X" + height;
         }
       //  typeNameTxt.setText(productTypeSizeDBData.getSizeId());
-        typeNameTxt.setText(finalSize);
+        typeNameTxt.setText(String.valueOf(finalSize));
         //IMG
 
         // open new activity
