@@ -2,6 +2,7 @@ package com.example.admin.abc;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class ProductTypeSizesDownloader extends AsyncTask<Void, Void, String> {
         this.c = c;
         this.urlAddress = urlAddress;
         this.lv = lv;
+        Log.d("newActivity url: ", "> " + urlAddress);
     }
     @Override
     protected void onPreExecute() {
