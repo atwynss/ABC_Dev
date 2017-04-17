@@ -70,7 +70,7 @@ public class ListProductTypeSizesDataParser extends AsyncTask<Void,Void,Integer>
                 String Measure =jo.getString("Measurement");
                 int ProductTypeId=jo.getInt("ProductTypeId");
                 productTypeSizeDBData=new ProductTypeSizeDBData();
-                productTypeSizeDBData.setProductTypeId(ProductTypeId);
+
                 productTypeSizeDBData.setSizeId(SizeId);
                 productTypeSizeDBData.setLength(Length);
                 productTypeSizeDBData.setWidth(Width);
